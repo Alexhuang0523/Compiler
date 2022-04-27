@@ -1,1 +1,34 @@
+                      Parsing (Top-Down Parsing)
+**Context free Grammar** 
+-Set of Terminals T
+-Set of Non-Terminals N
+-Start Symbol 
+-Set of Productions 
 
+           Algorithms for Parsing (Recursive Descent Parsing) 
+-from LEFT to RIGHT 
+-from TOP to BOTTOM
+ 
+                Limitation for Recursive Descent Parsing       
+-No backtracking to try different productions once we have found a production that succeeds for non-terminal 
+-Infinite Loop(Left Recursion) when S=Non terminal 
+-Infinite Loop(Left Recursion) can be eliminated by hand,thus this limitation is not major  
+ 
+Derivation = Sequence of Productions 
+                     
+Grammar is Ambiguous if it has more than one parse tree 
+Divide(rewrite) Production into two classes to avoid ambiguity
+Instead of rewrite the Grammar 
+- Use the more Natural(Ambigious)Grammar 
+- Along with disambiguating Associativity and Precedence Declaration 
+                                                         %left+
+                                                         %left*
+ Error kind 
+ -Lexical  ....$....
+ -Syntax   ....x*%....
+ -Semantic intx;y=x(3)
+ 
+ Solution 
+ -Panic Mode ---> Skip errors part 
+ -Error Productions
+                  
